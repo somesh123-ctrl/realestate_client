@@ -16,7 +16,7 @@ const HouseListingForm = () => {
 
     const listProperty = () =>{
 
-        const url='/api/house-listing'
+        const url='https://realestate-server.onrender.com/api/house-listing'
        
         const data=new FormData();
 
