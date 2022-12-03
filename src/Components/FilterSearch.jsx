@@ -34,7 +34,7 @@ const FilterSearchResults = () => {
                   <div className="House__details" key={house._id}>
                     <div className="img-conatiner">
                       <Link
-                        to={`/house/${house.house_location.city}/${house._id}`}
+                        to={`/house/description/${house._id}`}
                       >
                         <img className="img"
                           src={house.house_details.house_image}
