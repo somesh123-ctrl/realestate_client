@@ -17,7 +17,7 @@ const houseRentAction = () => async (dispatch) => {
   const production_url = "/api/house-rent";
   try {
     dispatch({ type: FETCH_HOUSE_REQUEST });
-    const { data } = await Axios.get(production_url);
+    const { data } = await Axios.get(dev_url);
     dispatch({ type: FETCH_HOUSE_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: FETCH_HOUSE_FAIL, payload: error });
